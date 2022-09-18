@@ -13,16 +13,6 @@ public class CoreConfiguration {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-/*
-    @Bean
-    public GroupedOpenApi groupedOpenApi() {
-        String pathsToMatch[] = {"/v1/tasks"};
-        return GroupedOpenApi.builder()
-                .group("tasks")
-                .pathsToMatch(pathsToMatch)
-                .build();
-    }
-*/
 
     @Bean
     public GroupedOpenApi groupOpenApi() {
